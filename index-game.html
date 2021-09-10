@@ -6,8 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP_rock_paper_scissors</title>
     <script src="script-game.js"></script>
+    <link rel="stylesheet" href="style-game.css">
 </head>
 <body>
-    <p>Em inspecionar elemento, abra a aba console para jogar o jogo.</p>
+    <h2>Escolha uma da opções para uma rodada de 5x contra o PC</h2>
+<div id="explains">
+    <p>Pedra quebra Tesoura. <br> Tesoura corta Papel. <br> Papel cobre Pedra.</p>
+</div>
+    <div id="divButs">
+        <button id="Pedra" onclick="choiceButton('Pedra')">Pedra</button>
+        <button id="Tesoura" onclick="choiceButton('Tesoura')">Tesoura</button>
+        <button id="Papel" onclick="choiceButton('Papel')">Papel</button>
+    </div>
+
+    <div id="errase">
+        <button id="Erase" onclick="erase()">Apagar Rodada</button>
+    </div>
+
+    <div id="result">
+    </div>
 </body>
 </html>

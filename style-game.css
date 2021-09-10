@@ -1,0 +1,51 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#divButs{
+    width: 100vw;
+    height: 10vh;
+    background: #6C7A89;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-end;
+    padding-bottom: 25px;
+}
+
+h2 {
+    width: 100vw;
+    height: 10vh;
+    background: #cacccf;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#explains{
+    background: #cacccf;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#result{
+    font-size: small;
+    background: #cacccf;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+#errase{
+    width: 100vw;
+    height: 5vh;
+    background: #6C7A89;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
