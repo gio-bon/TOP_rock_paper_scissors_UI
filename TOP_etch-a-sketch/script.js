@@ -71,3 +71,36 @@ function blackColor() {
     buttonsContainer.appendChild(btnBlack).classList.add('btn')
 }
 blackColor() 
+
+/* função que apaga quadrados e pede nova formatação de tamanho*/
+
+function reSize() {
+   
+    btnSize.textContent = 'GRID SIZE'
+    btnSize.addEventListener('click', () => {
+        let user = prompt('Qual tamanhoXtamanho deseja que a grade seja?')
+        if(user === null || user < 1){
+            reSet();
+            creatDivs(16,16);
+            grayColor();
+            rgbColors();
+            blackColor();
+        } else { 
+            reSet();
+            creatDivs(user,user);
+            grayColor();
+            rgbColors();
+            blackColor();
+        }
+    })
+    buttonsContainer.appendChild(btnSize).classList.add('btn')
+}
+reSize()
+
+/* função que seleciona divs e as apaga */
+function reSet() {
+    const boxs = container.querySelectorAll('.box')
+    boxs.forEach(box => {
+        box.remove();
+    })
+}
